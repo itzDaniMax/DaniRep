@@ -13,8 +13,8 @@ body {
 
 .category-text h1 {
     width: 400px;
-    margin-left: 100px;
-    font-size: 40px;
+    margin-left: 15px;
+    font-size: 30px;
     background: linear-gradient(45deg, #c28532 33%,  #d8a051 66%, #dcb071);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
