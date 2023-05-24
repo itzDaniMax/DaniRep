@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=800, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/product-grid.css" rel="stylesheet">
+    <link href="css/cart-form.css" rel="stylesheet">
+    <title>Магазин</title>
+</head>
+<body>
+    <main>
+        
+        <div class="category-text">
+            <h1> Корзина </h1>
+        </div>
+
+        <div id="cart"></div>
+
+        <div class="modal">
+            <div class="modal-box">
+                <div class="basket-form-box">
+                    <form method="post" class="basket-form">
+                        <legend> Корзина </legend>
+                        <input type="text" name="name" title="Введите ваше имя" placeholder="Имя" required class="name-field">
+                        <input type="email" name="email" placeholder="Почта" required class="email-field">
+                        <div class="radio-form">
+                            <input type="radio" name="delivery" class="delivery-field">
+                            <label for="delivery-field"> Доставка </label>
+                            <input type="radio" name="delivery" class="delivery-field">
+                            <label for="delivery-field"> Самовывоз </label>
+                        </div>
+                        <input type="text" name="address" placeholder="Адрес доставки" class="address-field">
+                        <textarea name="mess" placeholder="Комментарий к заказу..." required class="message-field"></textarea>
+                        <input type="submit" name="submit" value="Отправить" class="send-field">
+                        <div class="total-name"> Итог: <div id="total-name"></div ></div>
+                        <div class="total-text"> Итог: <div id="total-price"></div ></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
