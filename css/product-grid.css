@@ -1,0 +1,136 @@
+/* СТИЛИ ДЛЯ КАТЕГОРИЙ КАРТОЧЕК ТОВАРА */
+
+
+.grid-cards {
+    margin: 0 auto;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 225px);
+    width: 100%;
+    max-width: 1000px;
+    justify-content: center;
+    justify-items: center;
+    column-gap: 30px;
+    row-gap: 40px;
+}
+
+.card {
+    width: 225px;
+    min-height: auto;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    transition: 0.2s;
+    position: relative;
+}
+
+.card:hover {
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
+}
+  
+.card-top {
+    background: #fff;
+    flex: 0 0 220px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image {
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    width: 100%;
+    height: 100%;
+}
+  
+.card-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.2s;
+}
+
+.card-image:hover > img {
+    transform: scale(1.1);
+}
+  
+.card-bottom {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.transition-btn {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    color: #b48a81;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #b48a81;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+  
+.transition-btn:hover {
+    border: 1px solid #f5bcb0;
+    background-color: #f5bcb0;
+    color: #fff;
+}
+
+.text-btn {
+    font-weight: bold;
+}
+
+
+/* СТИЛИ ДЛЯ КАРТОЧЕК ТОВАРА */
+
+
+.card-label {
+    padding: 4px 8px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: linear-gradient(45deg, #c28532 33%,  #d8a051 66%, #dcb071);
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    padding: 10px;
+}
+
+.card-price {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-price::after {
+    content: "₽";
+    margin-left: 4px;
+    position: relative;
+}   
+
+.card-title {
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 150%;
+    color:  #7d572c;
+}
