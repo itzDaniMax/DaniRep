@@ -1,0 +1,125 @@
+.modal {
+    margin: 0 auto;
+    width: 325px;
+    height: auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.modal-box {
+    padding: 45px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.close-basket-btn:hover svg path {
+    fill: gray;
+    transition: fill .4s;
+}
+
+.connection-form-box {
+    flex-direction: column;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 25px;
+    color: #f5bcb0;
+}
+
+.name-field,
+.email-field,
+.message-field,
+.send-field,
+.address-field {
+    border: 1px solid #f5bcb0;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    border-radius: 50px;
+    background-color:#fff1ee;
+    margin-top: 25px;
+    cursor: pointer;
+    outline-color: #b48a81;
+}
+
+.message-field {
+    resize: none;
+    width: 75%;
+    height: 200px;
+    border-radius: 25px;
+    overflow: auto;
+    padding: 15px;
+}
+
+input[type=submit] { 
+    background: #f5bcb0; 
+    cursor :pointer;
+}
+
+input[value="Отправить"] {
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+}
+
+input[value="Отправить"]:hover {
+    transition: linear 0.3s;
+    background-color: #fff1ee;
+    color: #f5bcb0;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: gray;
+    -webkit-box-shadow: 0 0 0px 1000px #fff1ee inset;
+}
+
+.radio-form {
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+label[for="delivery-field"] {
+    font-weight: bold;
+    color: #f5bcb0;
+}
+
+/* .total-text {
+    display: flex;
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    color: gray;
+} */
+
+input[value="Очистить корзину"] {
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+}
+
+input[value="Очистить корзину"]:hover {
+    transition: linear 0.3s;
+    background-color: #fff1ee;
+    color: #f5bcb0;
+}
+
+.total-price-text {
+    margin-top: 10px;
+    display: flex;
+}
+
+#cart {
+    margin-top: 25px;
+}
+
+#cart, .total-price-text {
+    max-width: 225px;
+    word-wrap: break-word;
+    font-weight: bold;
+    font-size: 18px;
+    color: gray;
+}
